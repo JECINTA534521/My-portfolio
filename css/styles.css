@@ -1,0 +1,168 @@
+/* General styling*/
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #ffffff;
+}
+
+h4, p {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+ul li {
+    color: #ffffff;
+}
+
+a {
+    color: #f08080;
+}
+
+a:hover {
+    color: #cd5b45;
+}
+
+.btn {
+    background-color: #f08080;
+}
+
+.btn i {
+    color: #cd5b45;
+}
+
+
+/* Styling for header*/
+
+#header-image {
+    background-image: url("../media/images/coral_1600x800.png");
+    height: 100vh;
+    background-color: #0041a2; 
+    background-position: center;
+    background-size: cover;
+}
+
+.title-greeting-desktop {
+    position: absolute;
+    top: 65vh;
+    left: 45vw;
+}
+
+.title-greeting-mobile {
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+}
+
+
+/* Styling for fish animation*/
+
+.fish-animation-1 {
+    position: absolute;
+    top: 25vh;
+    right: -15vw;
+    animation: moveleft 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+    from {right: -15vw;}
+    to {right: 20vw;}
+}
+
+.fish-animation-2 {
+    position: absolute;
+    top: 50vh;
+    left: -15vw;
+    animation: movefurtherright 20s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movefurtherright {
+    from {left: -15vw;}
+    to {left: 80vw;}
+}
+
+
+.fish-animation-3 {
+    position: absolute;
+    top: 75vh;
+    left: -15vw;
+    animation: moveright 10s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveright {
+    from {left: -15vw;}
+    to {left: 20vw;}
+}
+
+
+/* Styling for main colour*/
+
+main {
+    background-color: #16104f;
+}
+
+
+/* Styling for bio text*/
+
+.bio p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+
+/* Styling for cards under My Work*/
+
+@media only screen and (min-width: 720px) { 
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+
+/* Styling for My Work cards*/
+
+.card-title {
+    color: #16104F;
+}
+
+.card-subtitle {
+    color: #27A0C2;
+}
+
+.card-text {
+    color: #000000;
+}
+
+.card-link {
+    font-size: 1.5rem;
+}
+
+.bg-card-blockquote {
+    background-color: #27A0C2;
+}
+
+
+/* Styling for footer colour*/
+
+footer {
+    background-color: #0041A2;
+}
+
+
+/* Styling for home button*/
+
+.home-button {
+    position: relative;
+    top: -3.5vh;
+    right: 5vw;
+}
+
+
+/* Styling for Linkedin and GitHub contact links*/
+
+.contact-link {
+    font-size: 1.5rem;
+}
